@@ -1,0 +1,25 @@
+<h1 class="text-center bg-secondary p-3">Hero</h1>
+
+<dl class="mx-auto">
+  <td class="fw-bold">Nombre:</td>
+  <dd>{{ name() }}</dd>
+
+  <td class="fw-bold">Edad:</td>
+  <dd>{{ age() }}</dd>
+
+  <td class="fw-bold">Método:</td>
+  <dd>{{ heroDescription() }}</dd>
+
+  <td class="fw-bold">Capitalizado:</td>
+  <!-- Intentar  -->
+  <!-- <dd> {{Capitalizado()}} </dd> -->
+  <dd> {{name() | uppercase}} </dd>
+</dl>
+
+<button (click)="changeHero()" class="btn btn-secondary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="chageAge()" class="btn btn-secondary mx-2">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-danger mx-2">Reset</button>
